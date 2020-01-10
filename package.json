@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "deploy": "rdoc --publish <your repo url>",
-    "build": "rdoc -d home,introduce,faq,about,github,batch --clean --build",
-    "start": "rdoc -d home,introduce,faq,about,github,batch --clean"
+    "build": "rdoc -d home,introduce,batch --clean --build",
+    "start": "rdoc -d home,introduce,batch --clean"
   },
   "keywords": [
     "rdoc",
@@ -15,7 +15,18 @@
     "react"
   ],
   "dependencies": {
-    "rdoc": "1.12.x"
+    "rdoc": "1.12.x",
+    "rdoc-theme-load-react": "^1.1.0",
+    "react-hot-keys": "^1.1.0"
+  },
+  "rdoc": {
+    "theme": "rdoc-theme-load-react",
+    "favicon": "favicon.png",
+    "logo": "./favicon.png",
+    "footer": "前端<b>开</b>发",
+    "react_modules": {
+      "Hotkeys": "react-hot-keys"
+    }
   },
   "author": "",
   "license": "MIT"
