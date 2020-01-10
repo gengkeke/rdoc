@@ -1,0 +1,22 @@
+{
+  "name": "rdoc",
+  "version": "1.0.0",
+  "description": "Describe rdoc here",
+  "private": true,
+  "scripts": {
+    "deploy": "rdoc --publish <your repo url>",
+    "build": "rdoc -d home,introduce,faq,about,github,batch --clean --build",
+    "start": "rdoc -d home,introduce,faq,about,github,batch --clean"
+  },
+  "keywords": [
+    "rdoc",
+    "rdoc",
+    "react-doc",
+    "react"
+  ],
+  "dependencies": {
+    "rdoc": "1.12.x"
+  },
+  "author": "",
+  "license": "MIT"
+}
